@@ -2,109 +2,61 @@ import type { SiteConfig } from "@core/web/types"
 
 export const config: SiteConfig = {
   business: {
-  city: "Tracy",
-  theme: "ocean",
-  niche: "cleaning",
-  name: "Sparkle Clean Co.",
-  tagline: "Spotless Home. Zero Stress.",
-  phone: "(555) 789-0123",
-  phoneHref: "tel:+15557890123",
-  email: "hello@sparkleclean.com",
-  address: "Tracy, California",
-  serviceAreas: ["Tracy", "Stockton", "Manteca", "Lathrop", "Mountain House", "Ripon"],
-  license: "CA Business #789012",
-  since: "2012",
-  google_rating: "4.9",
-  review_count: "523",
-  emergency: false,
-  social: { google: "https://google.com", yelp: "https://yelp.com", facebook: "https://facebook.com" },
-},
+    name: "Elite Maids House Cleaning",
+    tagline: "Sparkling Clean, Every Single Time",
+    phone: "(480) 933-1692",
+    phoneHref: "tel:+14809331692",
+    email: "info@elitemaidshousecleaning.com",
+    address: "123 Main St",
+    city: "Gilbert",
+    serviceAreas: ["Gilbert AZ", "Mesa AZ", "Scottsdale AZ", "Chandler AZ", "Phoenix AZ", "Tempe AZ"],
+    license: "Licensed & Insured",
+    since: "2010",
+    google_rating: "4.9",
+    review_count: "200",
+    emergency: false,
+    theme: "ocean",
+    niche: "cleaning",
+  },
 
   services: [
-  { icon: "sparkles", title: "Deep Cleaning", desc: "One-time top-to-bottom clean. Perfect for move-in/out, post-construction, or a seasonal fresh start. We leave no corner untouched.", urgent: false },
-  { icon: "calendar", title: "Weekly / Bi-Weekly", desc: "Recurring cleaning on your schedule. Same trusted cleaner every visit. Cancel anytime, no contracts.", urgent: false },
-  { icon: "truck", title: "Move In / Move Out", desc: "Professional clean for your old place or new home. Deposit-back guaranteed or we re-clean free.", urgent: false },
-  { icon: "building", title: "Commercial Cleaning", desc: "Offices, retail spaces, medical facilities. Nightly, weekly, or custom schedule. Bonded and insured.", urgent: false },
-  { icon: "home", title: "Post-Construction", desc: "Dust, debris, paint overspray — we handle it all. Move-in ready within 24 hours of construction.", urgent: false },
-  { icon: "key", title: "Airbnb Turnover", desc: "Between-guest cleaning that earns 5-star reviews. Quick turnaround. Fresh linens. Restock supplies.", urgent: false },
-],
+    { icon: "home", title: "House Cleaning", desc: "Regular cleaning to keep your home fresh and tidy.", urgent: false },
+    { icon: "sparkles", title: "Deep Cleaning", desc: "Thorough cleaning for a truly spotless and sanitized home.", urgent: false },
+    { icon: "briefcase", title: "Apartment Cleaning", desc: "Specialized cleaning services for apartments and condos.", urgent: false },
+    { icon: "scissors", title: "Maid Service", desc: "Professional maid services tailored to your specific needs.", urgent: false },
+    { icon: "truck", title: "Move In/Out Cleaning", desc: "Comprehensive cleaning for a smooth transition into or out of your home.", urgent: false },
+    { icon: "heart", title: "Eco-Friendly Cleaning", desc: "Green cleaning solutions for a healthy home and planet.", urgent: false }
+  ],
 
   testimonials: [
-  { name: "Michelle B.", location: "Tracy, CA", stars: 5, text: "My house has never been this clean. The team arrived on time, worked methodically, and even cleaned spots I didn't ask for. Subscribing immediately." },
-  { name: "David S.", location: "Stockton, CA", stars: 5, text: "Used them for move-out cleaning. Landlord returned the full deposit with a compliment about the condition. Worth every dollar." },
-  { name: "Airbnb Host A.", location: "Manteca, CA", stars: 5, text: "They turn my unit over in 2 hours no matter the condition. Guests consistently give 5 stars for cleanliness. Best business decision I made." },
-],
+    { name: "Sarah L.", location: "Scottsdale, AZ", stars: 5, text: "Elite Maids did an incredible deep clean on my home last month. They got behind the fridge and oven, areas I always neglect! The team was so friendly and professional, and my house has never felt this fresh. Worth every penny!" },
+    { name: "Mark T.", location: "Mesa, AZ", stars: 5, text: "I've been using Elite Maids for regular house cleaning for over a year now, and they are consistently excellent. My cleaning team is always the same, which I love, and they know exactly what to do. Booking online is super easy too!" },
+    { name: "Jessica R.", location: "Chandler, AZ", stars: 5, text: "We hired Elite Maids for a move-out clean, and they exceeded all expectations. The apartment looked brand new! They paid attention to every detail, even the grout lines in the bathroom. Highly recommend their thorough and reliable service." }
+  ],
 
   trustBadges: [
-  "Background-Checked Staff", "Fully Insured", "Eco-Friendly Products",
-  "Satisfaction Guarantee", "No Contracts", "5-Star Average"
-],
+    "Licensed & Insured", "Background-Checked Pros", "5-Star Rated", "Satisfaction Guaranteed", "Eco-Friendly Options"
+  ],
 
   stats: [
-  {
-    "value": 4.9,
-    "label": "Google Rating",
-    "suffix": "★",
-    "decimals": 1
-  },
-  {
-    "value": 2615,
-    "label": "Jobs Done",
-    "suffix": "+",
-    "decimals": 0
-  },
-  {
-    "value": 14,
-    "label": "Yrs Experience",
-    "suffix": "+",
-    "decimals": 0
-  }
-],
+    { value: 4.9, label: "Google Rating", suffix: "★", decimals: 1 },
+    { value: 5000, label: "Homes Cleaned", suffix: "+", decimals: 0 },
+    { value: 10, label: "Yrs Experience", suffix: "+", decimals: 0 }
+  ],
 
   reasons: [
-  {
-    "icon": "clock",
-    "title": "Fast Response",
-    "desc": "Same-day service when you need it. We don't keep customers waiting."
-  },
-  {
-    "icon": "dollar-sign",
-    "title": "Upfront Pricing",
-    "desc": "Quote before work starts. The number we say is the number you pay."
-  },
-  {
-    "icon": "award",
-    "title": "Certified Professionals",
-    "desc": "Licensed, insured, and trained. Real expertise on every job."
-  },
-  {
-    "icon": "thumbs-up",
-    "title": "Satisfaction Guarantee",
-    "desc": "100% happy or we come back and make it right. No questions asked."
-  },
-  {
-    "icon": "phone",
-    "title": "AI Reception 24/7",
-    "desc": "AI books cleanings, handles reschedules, and collects post-service reviews via call, text, or WhatsApp. Always on, never misses a lead."
-  },
-  {
-    "icon": "truck",
-    "title": "Fully Equipped",
-    "desc": "Trucks stocked with everything needed. First-visit completion rate above 90%."
-  }
-],
+    { icon: "clock", title: "Fast Online Booking", desc: "Schedule your cleaning in under 60 seconds, anytime." },
+    { icon: "dollar-sign", title: "Transparent Pricing", desc: "No hidden fees, just clear and upfront costs for all services." },
+    { icon: "award", title: "Certified Professionals", desc: "Our team is trained, background-checked, and highly skilled." },
+    { icon: "thumbs-up", title: "Satisfaction Guarantee", desc: "We ensure you're delighted with every cleaning, or we make it right." },
+    { icon: "home", title: "Consistent Teams", desc: "Enjoy familiar faces and personalized service with your dedicated cleaning crew." },
+    { icon: "sparkles", title: "Detailed Checklists", desc: "Every room is cleaned to perfection with our comprehensive checklist." }
+  ],
 
-  formServiceOptions: [
-  "Deep Cleaning",
-  "Weekly / Bi-Weekly",
-  "Move In / Move Out",
-  "Commercial Cleaning",
-  "Post-Construction",
-  "Airbnb Turnover"
-],
+  formServiceOptions: ["House Cleaning", "Deep Cleaning", "Apartment Cleaning", "Maid Service", "Move In/Out Cleaning", "Eco-Friendly Cleaning Services"]
 }
 
-// Backward compat re-exports
+// Backward-compat re-exports
 export const BUSINESS = config.business
 export const SERVICES = config.services!
 export const TESTIMONIALS = config.testimonials!
